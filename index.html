@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>华中农业大学科研用房核算</title>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <style>
+        	/*css reset*/
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+				color: #000;
+				font-size: 14px;
+			}
+			.container {
+				margin: 0 auto;
+				width: 800px;
+				height: 500px;
+			}
+			header {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				margin: 3px 0;
+				padding: 0 10px;
+				width: 100%;
+				height: 26px;
+				line-height: 26px;
+				font-weight: bold;
+				font-size: 14px;
+				color: #fff;
+				border: 1px solid #CE7E5B;
+				background: url(bg.gif);
+			}
+			.fa-calculator {
+				color: #fff;
+				margin: 0 3px 0 0;
+			}
+			.wrapper {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				width: 100%;
+				height: auto;
+				background-color: #E9F7FF;
+				border-left: 1px solid #aaa;
+				border-right: 1px solid #aaa;
+			}
+			.bottom {
+				border-bottom: 1px solid #aaa;
+			}
+			.wrapper p {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 0 10px;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				font-weight: bold;
+				font-size: 13px;
+				background-color: #EEEEEE;
+				border-top: 1px solid #aaa;
+				border-bottom: 1px solid #aaa;
+			}
+			table {
+				padding: 10px 0 0;
+				width: 100%;
+			}
+			table tr td {
+				padding-bottom: 10px;
+				width: 25%;
+			}
+			table tr td:nth-child(odd) {
+				text-align: right;
+			}
+			table tr td input {
+				padding: 0 3px;
+				width: 86px;
+				height: 22px;
+			}
+			table tr td select {
+				padding: 0 3px;
+				height: 22px;
+			}
+			#action {
+				text-align: center;
+			}
+			footer {
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				color: #666;
+			}
+
+        </style>
+    </head>
+    <body>
+		
+		<div class="container">
+
+			<header> <i class="fa fa-calculator"></i> 华中农业大学科研用房核算</header>
+
+			<div class="wrapper">
+				<p>教师研究用房定额</p>
+				<table>
+					<tr>
+						<td><label for="college">科研用房学科系数：</label></td>
+						<td colspan="3">&nbsp;<select name="college" id="college">
+								<option value="1">经济管理学院</option>
+								<option value="1">公共管理学院</option>
+								<option value="1">外国语学院</option>
+								<option value="1">马克思主义学院</option>
+								<option value="1">文法学院</option>
+								<option value="3">信息学院</option>
+								<option value="3" selected="selected">植物科学技术学院</option>
+								<option value="3">水产学院</option>
+								<option value="3">理学学院</option>
+								<option value="3">动物科学技术学院、动医学院</option>
+								<option value="3">园艺园林学院</option>
+								<option value="3">生命科学技术学院</option>
+								<option value="3">资源与环境学院</option>
+								<option value="3">食品科学技术学院</option>
+								<option value="3.5">工学院</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="academician">院士数：</label></td>
+						<td>&nbsp;<input type="text" name="academician" id="academician" placeholder="请输入整数">&nbsp;人</td>
+						<td><label for="professor">教授数：</label></td>
+						<td>&nbsp;<input type="text" name="professor" id="professor" placeholder="请输入整数">&nbsp;人</td>
+					</tr>
+					<tr>
+						<td><label for="aprofessor">副教授数：</label></td>
+						<td>&nbsp;<input type="text" name="aprofessor" id="aprofessor" placeholder="请输入整数">&nbsp;人</td>
+						<td><label for="teacher">讲师及以下教师数：</label></td>
+						<td>&nbsp;<input type="text" name="teacher" id="teacher" placeholder="请输入整数">&nbsp;人</td>
+					</tr>
+					<tr>
+						<td><label for="postdoctor">博士后数：</label></td>
+						<td>&nbsp;<input type="text" name="postdoctor" id="postdoctor" placeholder="请输入整数">&nbsp;人</td>
+					</tr>
+				</table>
+			</div> <!-- wrapper -->
+
+			<div class="wrapper">
+				<p>学生研究用房定额</p>
+				<table>
+					<tr>
+						<td><label for="master">硕士生数：</label></td>
+						<td>&nbsp;<input type="text" name="master" id="master" placeholder="请输入整数">&nbsp;人</td>
+						<td><label for="doctor">博士生数：</label></td>
+						<td>&nbsp;<input type="text" name="doctor" id="doctor" placeholder="请输入整数">&nbsp;人</td>
+					</tr>
+					<tr>
+						<td><label for="rstudent">留学生数：</label></td>
+						<td>&nbsp;<input type="text" name="rstudent" id="rstudent" placeholder="请输入整数">&nbsp;人</td>
+					</tr>
+				</table>
+			</div> <!-- wrapper -->
+
+			<div class="wrapper">
+				<p>经费补贴用房定额</p>
+				<table>
+					<tr>
+						<td><label for="managefee">管理费：</label></td>
+						<td>&nbsp;<input type="text" name="managefee" id="managefee" placeholder="请输入实数">&nbsp;元</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div> <!-- wrapper -->
+
+			<div class="wrapper">
+				<p>实际用房额度</p>
+				<table>
+					<tr>
+						<td><label for="fact">实际使用房屋面积：</label></td>
+						<td>&nbsp;<input type="text" name="fact" id="fact" placeholder="请输入实数">&nbsp;㎡</td>
+						<td><label for="self">其中自筹且25年内的面积：</label></td>
+						<td>&nbsp;<input type="text" name="self" id="self" placeholder="请输入实数">&nbsp;㎡</td>
+					</tr>
+					<tr>
+						<td colspan="4" id="action">
+							<button id="calculate">计算</button>&nbsp;&nbsp;
+							<button id="reset">重置</button>
+						</td>
+					</tr>
+				</table>
+			</div> <!-- wrapper -->
+
+			<div class="wrapper bottom">
+				<p>科研用房需缴费</p>
+				<table>
+					<tr>
+						<td  colspan="2"><label for="sum">科研用房需缴费：</label></td>
+						<td>&nbsp;<input type="text" name="sum" id="sum">&nbsp;元</td>
+					</tr>
+				</table>
+			</div> <!-- wrapper -->
+
+			<footer>
+				Copyright © 2017至今 信息学院sunmaer版权所有
+			</footer>
+
+		</div> <!-- container -->
+
+    	<script>
+    		/**
+    		 * 华中农业大学科研用房核算
+    		 */
+    		
+    		/**
+    		 * 判断输入是否合法，输入必须是非负实数
+    		 */
+    		function check(num) {
+    			var reg = new RegExp("^\\d+(\\.\\d+)?$");
+    			return reg.test(num); 
+    		}
+
+    		/**
+    		 * 教师研究用房定额
+    		 */
+    		function teacher() {
+    			var sum;
+    			var r = document.getElementById("college").value;
+    			var academician = document.getElementById("academician").value * 20;
+    			var professor = document.getElementById("professor").value * 12;
+    			var aprofessor = document.getElementById("aprofessor").value * 9;
+    			var teacher = document.getElementById("teacher").value * 6;
+    			var postdoctor = document.getElementById("postdoctor").value * 9;
+    			sum = (academician + professor + aprofessor + teacher + postdoctor)*r;
+    			return sum;
+    		}
+
+    		/**
+    		 * 学生研究用房定额
+    		 */
+    		function student() {
+    			var sum;
+    			var r = document.getElementById("college").value;
+    			var master = document.getElementById("master").value * 1.5;
+    			var doctor = document.getElementById("doctor").value * 2.5;
+    			var rstudent = document.getElementById("rstudent").value * 2.5;
+    			sum = (master + doctor + rstudent)*r;
+    			return sum;
+    		}
+
+    		/**
+    		 * 经费补贴用房定额
+    		 */
+    		function fee() {
+    			var sum;
+    			var managefee = document.getElementById("managefee").value;
+    			var max = (teacher() + student())*0.3;
+    			var sub = managefee/1000;
+    			if(sub <= max) return sub;
+    			else return max;
+    		}
+
+    		/**
+    		 * 计算
+    		 */
+    		document.getElementById("calculate").onclick = function() {
+    			var inputs = document.getElementsByTagName("input");
+    			var flag=true; // 判断是否合法标志
+    			for(var i=0;i<inputs.length-1;i++) { // 表单为空的赋0且判断是否合法
+    				if(inputs[i].value == "" || inputs[i].value == 0) {
+    					inputs[i].value = 0;
+    				}else if(!check(inputs[i].value)) {
+    					flag = false;
+    				}
+    			}
+    			if(flag == false) {
+    				alert("只能输入非负实数！");
+    			}
+
+    			// 实际额度
+    			var fact = document.getElementById("fact").value;
+    			// 实际额度中自筹面积
+    			var self = document.getElementById("self").value;
+    			// 定额
+    			var standard = teacher() + student() +fee();
+    			// 总收费
+    			var sum;
+    			// 自筹面积核算为50%
+    			fact = (fact - self)+self*0.5;
+    			alert("教师研究用房定额："+teacher()+" ㎡\n学生研究用房定额："+student()+" ㎡\n经费补贴用房定额："+fee()+" ㎡\n总定额："+standard+" ㎡\n实际使用房屋面积："+document.getElementById("fact").value+" ㎡\n其中自筹且25年内的面积："+self+" ㎡\n实际额度："+fact+" ㎡");
+    			/**
+    			 * 定额面积内不收费，超过定额的部分20%每平方240元，其他部分每平方480
+    			 */
+    			if(fact <= standard) {
+    				alert("实际额度小于定额，不收费！");
+    				document.getElementById("sum").value = 0;
+    			} else if((fact - standard)<=standard*0.2) {
+    				alert("实际额度不超过定额的20%，超过定额的部分每平方收费240元！");
+    				document.getElementById("sum").value = ((fact - standard)*240).toFixed(2);
+    			} else {
+    				alert("实际额度超过定额的20%，超过定额的部分20%每平方收费240元，其他部分每平方收费480元！");
+    				var a = 
+    				document.getElementById("sum").value = ((standard*0.2)*240 + (fact - standard*1.2)*480).toFixed(2);
+    			}
+    		}
+
+    		/**
+    		 * 重置
+    		 */
+    		document.getElementById("reset").onclick = function() {
+    			var inputs = document.getElementsByTagName("input");
+    			for(var i=0;i<inputs.length;i++) {
+    				inputs[i].value = "";
+    			}
+    		}
+    	</script>
+    </body>
+</html>
